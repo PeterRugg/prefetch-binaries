@@ -1,5 +1,5 @@
 li t0, 0x100000000
-li t3, 0x110000000
+li t3, 0x120000000
 li t2, 0
 csrr a0, mcycle
 .begin:
