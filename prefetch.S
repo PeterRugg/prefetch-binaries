@@ -7,12 +7,11 @@ li t3, 0x110000000
 li t2, 0
 csrr a0, mcycle
 .begin:
-bge t0, t3, .escape
 lw x0, 0x700(t0)
 lw t1, 0(t0)
 add t2, t2, t1
 addi t0, t0, 0x100
-j .begin
+blt t0, t3, .begin
 
 .escape:
 csrr a1, mcycle
