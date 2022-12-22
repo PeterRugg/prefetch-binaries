@@ -13,3 +13,6 @@ j .begin
 csrr a1, mcycle
 sub a0, a1, a0
 ebreak
+.globl _off_end
+_off_end:
+j _off_end
