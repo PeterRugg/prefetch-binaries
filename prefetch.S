@@ -9,7 +9,10 @@ csrr a0, mcycle
 .begin:
 lw x0, 0x700(t0)
 lw t1, 0(t0)
+blt t1, t4, .skipover
 add t2, t2, t1
+.skipover:
+mv t4, t1
 addi t0, t0, 0x100
 blt t0, t3, .begin
 
