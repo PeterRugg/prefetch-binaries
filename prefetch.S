@@ -7,12 +7,74 @@ li t3, 0x120000000
 li t2, 0
 csrr a0, mcycle
 .begin:
-lw x0, 0x700(t0)
 lw t1, 0(t0)
-blt t1, t4, .skipover
+lw x0, 0x100(t0)
+
 add t2, t2, t1
-.skipover:
-mv t4, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+add t2, t2, t1
+
 addi t0, t0, 0x100
 blt t0, t3, .begin
 
