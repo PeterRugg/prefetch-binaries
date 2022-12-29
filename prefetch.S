@@ -8,7 +8,7 @@ li t2, 0
 csrr a0, mcycle
 .begin:
 lw t1, 0(t0)
-lw x0, 0x100(t0)
+lw x0, 0x700(t0)
 
 add t2, t2, t1
 add t3, t3, t1
